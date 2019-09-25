@@ -1,0 +1,24 @@
+Last login: Wed Sep 25 13:21:00 on console
+(base) Jennys-MacBook-Pro:~ 2damnhot$ cd Desktop
+(base) Jennys-MacBook-Pro:Desktop 2damnhot$ madir MH8811_02
+-bash: madir: command not found
+(base) Jennys-MacBook-Pro:Desktop 2damnhot$ mkdir MH8811_02
+(base) Jennys-MacBook-Pro:Desktop 2damnhot$ cd MH8811_02
+(base) Jennys-MacBook-Pro:MH8811_02 2damnhot$ touch 'my file'
+(base) Jennys-MacBook-Pro:MH8811_02 2damnhot$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+(base) Jennys-MacBook-Pro:MH8811_02 2damnhot$ ..
+-bash: ..: command not found
+(base) Jennys-MacBook-Pro:MH8811_02 2damnhot$ cd ..
+(base) Jennys-MacBook-Pro:Desktop 2damnhot$ rm -rf MH8811_02
+(base) Jennys-MacBook-Pro:Desktop 2damnhot$ 
+
+
+
+
+
+
+
+
+
+
