@@ -35,6 +35,8 @@ def my_median(x):
             median = (x[r]+x[r-1])/2
     return median
 
+print(sample, 'the median is:', my_median(sample))
+
 def my_average(x):
     total = 0
     for the_num in range(0, len(x)):
@@ -47,6 +49,8 @@ print(sample, 'the average is:', my_average(sample))
 def my_range(x):
     ran = my_max(x) - my_min(x)
     return ran
+
+print(sample, 'the range is:', my_range(sample))
 
 
 
