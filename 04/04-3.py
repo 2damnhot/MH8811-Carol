@@ -26,7 +26,7 @@ def my_median(x):
             median = x[r]
         if len(x) % 2 == 0:
             r=int(len(x)/2)
-            median = (x[r]+x[r+1])/2
+            median = (x[r]+x[r-1])/2
     return median
 
 def my_average(x):
@@ -52,17 +52,19 @@ def getFileLines(fname):
     return lines
 
 a = getFileLines('MH8811-04-Data.csv')
-lst = list(map(int, a))
+for i in range(len(a)):
+    a[i] = int(a[i])
+
 #min for the dataset
-print('the min of dataset is:', my_min(lst))
+print('the min of dataset is:', my_min(a))
 #max for the dataset
-print('the max of dataset is:', my_max(lst))
+print('the max of dataset is:', my_max(a))
 #average for the dataset
-print('the average of dataset is:', my_average(lst))
+print('the average of dataset is:', my_average(a))
 #median for the dataset
-print('the median of dataset is:', my_median(lst))
+print('the median of dataset is:', my_median(a))
 #range for the dataset
-print('the range of dataset is:', my_range(lst))
+print('the range of dataset is:', my_range(a))
 
 
 

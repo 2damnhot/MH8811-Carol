@@ -32,7 +32,7 @@ def my_median(x):
             median = x[r]
         if len(x) % 2 == 0:
             r=int(len(x)/2)
-            median = (x[r]+x[r+1])/2
+            median = (x[r]+x[r-1])/2
     return median
 
 def my_average(x):

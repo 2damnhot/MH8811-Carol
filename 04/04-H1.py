@@ -15,12 +15,15 @@ def getFileLines(fname):
     return lines
 
 a = getFileLines('MH8811-04-Data.csv')
-lst = list(map(int, a))
+for i in range(len(a)):
+    a[i] = int(a[i])
 
 "-----------------------------------------------------------------------------------------"
 
 def my_sample_variance(x):
-    var = sum((xi - my_average(x)) ** 2 for xi in x) / (len(x)-1)
-    return var
+    total = 0
+    for xi in x:
+        total = total + (xi - my_average(x)) ** 2 
+    return total/(len(x)-1)
 
-print('the sample variance of dataset is:', my_sample_variance(lst))
+print('the sample variance of dataset is:', my_sample_variance(a))
